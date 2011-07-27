@@ -150,9 +150,9 @@
 
 				interval = setInt(clock, 60);
 
-				doc.onkeydown = function(e) {
-
-					var code = e.keyCode - 37;
+				document['onkeydown'] = function(e) {
+					var evt = e || window.event;
+					var code =  evt.keyCode - 37;
 
 					/*
 					 * 0: left
