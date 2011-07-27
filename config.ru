@@ -1,3 +1,3 @@
 require 'static_server'
 
-run StaticServer.start
+run StaticServer.start('.')
